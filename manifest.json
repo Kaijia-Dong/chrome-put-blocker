@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "拦截所有 PUT 请求",
+  "description": "阻止网页发送 HTTP 和 HTTPS PUT 请求。",
+  "version": "1.0.0",
+  "minimum_chrome_version": "91",
+  "permissions": ["declarativeNetRequest"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_put",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

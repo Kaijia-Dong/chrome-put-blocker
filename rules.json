@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "requestMethods": ["put"]
+    }
+  },
+  {
+    "id": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "requestMethods": ["put"],
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
